@@ -1,6 +1,6 @@
 import type { MetaFunction } from '@remix-run/node';
 import Button from '~/components/button';
-import MainNav from '~/components/main-nav';
+import MainNav from '~/routes/_marketing+/components/main-nav';
 
 export const meta: MetaFunction = () => {
   return [
