@@ -1,7 +1,7 @@
 import { Link } from '@remix-run/react';
-// import { Button } from './ui/button';
 import { BRAND_NAME } from '~/config';
 import Button from './button';
+import { Routes } from '~/enums/routes';
 
 const menuItems: { label: string; href: string; active?: boolean }[] = [
   {
@@ -44,12 +44,12 @@ export default function MainNav({}: Props) {
             </Link>
           ))}
         </nav>
-        <div className="space-x-4">
+        <div className="space-x-2">
           <Button asChild variant="ghost">
-            <Link to="/auth/login">Login</Link>
+            <Link to={Routes.Login}>Login</Link>
           </Button>
           <Button asChild>
-            <Link to="/auth/signup">Sign up</Link>
+            <Link to={Routes.SignUp}>Sign up</Link>
           </Button>
         </div>
       </div>
