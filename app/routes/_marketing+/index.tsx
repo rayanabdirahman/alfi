@@ -1,6 +1,6 @@
 import type { MetaFunction } from '@remix-run/node';
+import Button from '~/components/button';
 import MainNav from '~/components/main-nav';
-import { Button } from '~/components/ui/button';
 
 export const meta: MetaFunction = () => {
   return [
@@ -26,7 +26,7 @@ export default function Index() {
             Interacting with your money has never been so simple
           </p>
         </div>
-        <Button className="rounded-full px-6 py-3">Get started</Button>
+        <Button>Get started</Button>
       </section>
 
       {/* Onboarding section */}
