@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react';
 import Button from '~/components/button';
-import AuthLayout from '~/components/layout/auth-layout';
+import AuthLayout from '~/routes/auth+/components/auth-layout';
 import { Input } from '~/components/ui/input';
 import { Routes } from '~/enums/routes';
 
