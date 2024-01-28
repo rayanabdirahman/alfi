@@ -34,7 +34,7 @@ export default function Index() {
         </h2>
         <div className="grid grid-col-4 grid-flow-col gap-4">
           {[1, 2, 3].map((item) => (
-            <div className=" py-48 rounded-xl bg-neutral-300"></div>
+            <div key={item} className=" py-48 rounded-xl bg-neutral-300"></div>
           ))}
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function Index() {
         </h2>
         <div className="grid grid-col-4 grid-flow-col gap-4">
           {[1, 2, 3].map((item) => (
-            <div className=" py-48 rounded-xl bg-neutral-300"></div>
+            <div key={item} className=" py-48 rounded-xl bg-neutral-300"></div>
           ))}
         </div>
       </section>
