@@ -1,5 +1,6 @@
 import { Link } from '@remix-run/react';
 import { Button } from './ui/button';
+import { BRAND_NAME } from '~/config';
 
 const menuItems: { label: string; href: string; active?: boolean }[] = [
   {
@@ -26,7 +27,7 @@ export default function MainNav({}: Props) {
       <div className="container mx-auto flex h-20 items-center px-4 justify-between">
         <nav className="flex items-center space-x-4 lg:space-x-6">
           <Link to="/" className="text-lg font-bold">
-            Alfi
+            {BRAND_NAME}
           </Link>
           {menuItems.map((item) => (
             <Link
@@ -43,10 +44,10 @@ export default function MainNav({}: Props) {
           ))}
         </nav>
         <div className="space-x-4">
-          <Button asChild className="rounded-full" variant="ghost">
+          <Button asChild className="rounded-full px-6 py-3" variant="ghost">
             <Link to="/auth/login">Login</Link>
           </Button>
-          <Button asChild className="rounded-full">
+          <Button asChild className="rounded-full px-6 py-3">
             <Link to="/auth/signup">Sign up</Link>
           </Button>
         </div>

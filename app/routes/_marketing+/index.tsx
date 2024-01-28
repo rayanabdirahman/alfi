@@ -13,8 +13,9 @@ export default function Index() {
   return (
     <div>
       <MainNav />
-      <section className="container py-24 mx-auto flex flex-col items-center space-y-5 text-center ">
-        <div className="rounded-full bg-neutral-300 px-5 py-1 text-center font-semibold">
+      {/* Hero section */}
+      <section className="container py-20 mx-auto flex flex-col items-center space-y-5 text-center ">
+        <div className="rounded-full bg-neutral-200 px-4 py-1 text-center font-normal">
           Coming soon
         </div>
         <div>
@@ -25,21 +26,23 @@ export default function Index() {
             Interacting with your money has never been so simple
           </p>
         </div>
-        <Button className="rounded-full">Get started</Button>
+        <Button className="rounded-full px-6 py-3">Get started</Button>
       </section>
 
-      <section className="container px-4 py-24 space-y-8">
+      {/* Onboarding section */}
+      <section className="container px-4 py-16 space-y-8">
         <h2 className="text-2xl font-semibold">
           Effortless onboarding. <br /> Connect your bank accounts
         </h2>
         <div className="grid grid-col-4 grid-flow-col gap-4">
           {[1, 2, 3].map((item) => (
-            <div key={item} className=" py-48 rounded-xl bg-neutral-300"></div>
+            <div key={item} className="py-48 rounded-xl bg-neutral-300"></div>
           ))}
         </div>
       </section>
 
-      <section className="container px-4 py-24 space-y-8">
+      {/* Transactions section */}
+      <section className="container px-4 py-16 space-y-8">
         <h2 className="text-2xl font-semibold">
           Your transactions. <br /> All in one place
         </h2>
