@@ -14,7 +14,9 @@ export default function DashboardLayout({ children }: React.PropsWithChildren) {
         </div>
       </div>
 
-      <main className="container mx-auto flex pt-8 px-2">{children}</main>
+      <main className="container mx-auto flex flex-col pt-8 px-2">
+        {children}
+      </main>
     </>
   );
 }
